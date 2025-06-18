@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinInvest - Your Investment Banking Partner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <span>FinInvest</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login" class="login-btn" id="loginBtn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Empowering Growth, Securing Investments</h1>
+            <p>Your trusted partner in investment banking and fintech solutions. Unlock your financial potential with our innovative digital platform.</p>
+            <a href="#services" class="cta-btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Advisory</h3>
+                    <p>Expert financial advisory for mergers, acquisitions, and capital raising tailored to your business needs.</p>
+                    <button class="info-btn" data-popup="advisoryPopup">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Trading Platform</h3>
+                    <p>Next-gen trading platform with real-time analytics, smart order routing, and robust security.</p>
+                    <button class="info-btn" data-popup="tradingPopup">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Portfolio Management</h3>
+                    <p>Personalized portfolio management powered by AI for optimal returns and risk mitigation.</p>
+                    <button class="info-btn" data-popup="portfolioPopup">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Research & Insights</h3>
+                    <p>Access comprehensive market research, data, and actionable investment insights.</p>
+                    <button class="info-btn" data-popup="researchPopup">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="About FinInvest">
+            </div>
+            <div class="about-text">
+                <h2>About FinInvest</h2>
+                <p>
+                    FinInvest is a leading fintech company specializing in investment banking services. Our mission is to democratize access to sophisticated financial tools and empower individuals and businesses to achieve their financial goals. With a blend of technology and expertise, we deliver secure, user-centric solutions for trading, advisory, and portfolio management.
+                </p>
+                <ul>
+                    <li>Licensed and regulated by global authorities</li>
+                    <li>24/7 customer support</li>
+                    <li>Cutting-edge security & encryption</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CEO">
+                    <h4>Arjun Shah</h4>
+                    <p>Chief Executive Officer</p>
+                    <button class="info-btn" data-popup="ceoPopup">Contact CEO</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="CTO">
+                    <h4>Priya Mehta</h4>
+                    <p>Chief Technology Officer</p>
+                    <button class="info-btn" data-popup="ctoPopup">Contact CTO</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="CFO">
+                    <h4>Rahul Verma</h4>
+                    <p>Chief Financial Officer</p>
+                    <button class="info-btn" data-popup="cfoPopup">Contact CFO</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Head of Research">
+                    <h4>Anjali Gupta</h4>
+                    <p>Head of Research</p>
+                    <button class="info-btn" data-popup="researchHeadPopup">Contact Head</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+                <div id="formStatus"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 FinInvest. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- POPUPS -->
+    <!-- Service Popups -->
+    <div class="popup" id="advisoryPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Advisory</h3>
+            <p>Our expert advisory team provides strategic guidance for mergers, acquisitions, and capital raising, ensuring you make informed decisions at every step.</p>
+        </div>
+    </div>
+    <div class="popup" id="tradingPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Trading Platform</h3>
+            <p>Experience seamless and secure trading with real-time analytics, advanced order types, and powerful risk management tools.</p>
+        </div>
+    </div>
+    <div class="popup" id="portfolioPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Portfolio Management</h3>
+            <p>Our AI-driven portfolio management service helps maximize returns while minimizing risk, tailored to your unique investment goals.</p>
+        </div>
+    </div>
+    <div class="popup" id="researchPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Research & Insights</h3>
+            <p>Stay ahead with our comprehensive market research, data analysis, and actionable investment insights from industry experts.</p>
+        </div>
+    </div>
+
+    <!-- Team Contact Popups -->
+    <div class="popup" id="ceoPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Arjun Shah (CEO)</h3>
+            <p>Email: arjun.shah@fininvest.com<br>LinkedIn: linkedin.com/in/arjunshah</p>
+        </div>
+    </div>
+    <div class="popup" id="ctoPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Priya Mehta (CTO)</h3>
+            <p>Email: priya.mehta@fininvest.com<br>LinkedIn: linkedin.com/in/priyamehta</p>
+        </div>
+    </div>
+    <div class="popup" id="cfoPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Rahul Verma (CFO)</h3>
+            <p>Email: rahul.verma@fininvest.com<br>LinkedIn: linkedin.com/in/rahulverma</p>
+        </div>
+    </div>
+    <div class="popup" id="researchHeadPopup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Anjali Gupta (Head of Research)</h3>
+            <p>Email: anjali.gupta@fininvest.com<br>LinkedIn: linkedin.com/in/anjaligupta</p>
+        </div>
+    </div>
+
+    <!-- Login Popup -->
+    <div class="popup" id="loginPopup">
+        <div class="popup-content login-popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Login</h3>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" name="username" placeholder="Username" required>
+                <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+                <button type="submit" class="cta-btn">Login</button>
+                <div id="loginStatus"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
